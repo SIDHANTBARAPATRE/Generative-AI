@@ -1,0 +1,28 @@
+[project]
+name = "2-langchain-updated-version1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "SIDHANT BARAPATRE", email = "sidhantbarapatre12@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "langchain>=1.5.2",
+    "langchain-community>=0.4.2",
+    "langchain-google-genai>=4.5.1",
+    "langchain-groq>=1.2.1",
+    "langchain-openai>=1.8.3",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+2-langchain-updated-version1 = "_2_langchain_updated_version1:main"
+
+[tool.uv.build-backend]
+module-name = "_2_langchain_updated_version1"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
