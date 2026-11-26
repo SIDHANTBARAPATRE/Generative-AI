@@ -1,0 +1,31 @@
+[project]
+name = "5-rag-document-q-and-a"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "SIDHANTBARAPATRE", email = "sidhantbarapatre12@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "faiss-cpu>=1.16.0",
+    "langchain>=1.5.2",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.8.5",
+    "langchain-groq>=1.2.1",
+    "langchain-openai>=1.8.5",
+    "langchain-text-splitters>=1.2.0",
+    "openai>=3.59.0",
+    "pypdf>=7.1.1",
+    "streamlit>=1.67.0",
+]
+
+[project.scripts]
+5-rag-document-q-and-a = "_5_rag_document_q_and_a:main"
+
+[tool.uv.build-backend]
+module-name = "_5_rag_document_q_and_a"
+
+[build-system]
+requires = ["uv_build>=0.13.10,<0.14.0"]
+build-backend = "uv_build"
