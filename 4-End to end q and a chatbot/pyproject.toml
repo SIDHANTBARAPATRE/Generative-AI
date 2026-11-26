@@ -1,0 +1,44 @@
+[project]
+name = "4-end-to-end-q-and-a-chatbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "SIDHANTBARAPATRE", email = "sidhantbarapatre12@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "arxiv>=4.1.0",
+    "beautifulsoup4>=4.15.0",
+    "chromadb>=1.5.9",
+    "faiss-cpu>=1.16.0",
+    "fastapi>=0.165.0",
+    "ipykernel>=7.4.0",
+    "langchain>=1.5.2",
+    "langchain-chroma>=1.2.0",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.8.5",
+    "langchain-groq>=1.2.1",
+    "langchain-huggingface>=1.3.0",
+    "langchain-ollama>=1.2.0",
+    "langchain-openai>=1.8.5",
+    "langchain-text-splitters>=1.2.0",
+    "langserve>=0.3.3",
+    "pymupdf>=2.2",
+    "pypdf>=7.1.1",
+    "python-dotenv>=1.2.4",
+    "sentence-transformers>=6.3.0",
+    "sse-starlette>=3.7.1",
+    "streamlit>=1.67.0",
+    "wikipedia>=1.4.0",
+]
+
+[project.scripts]
+4-end-to-end-q-and-a-chatbot = "_4_end_to_end_q_and_a_chatbot:main"
+
+[tool.uv.build-backend]
+module-name = "_4_end_to_end_q_and_a_chatbot"
+
+[build-system]
+requires = ["uv_build>=0.13.10,<0.14.0"]
+build-backend = "uv_build"
